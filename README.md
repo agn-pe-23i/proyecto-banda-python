@@ -18,4 +18,6 @@ Programación estructurada CB01C
 
 Para la elaboracion de este script, primero planteamos un diseño basandonos en el modelo top-down que consiste en establecer una serie de niveles de mayor a menor complejidad (arriba-abajo) que den solución al algoritmo.
 
-En el caso de nuestro codigo comenzamos por la elaboracion de nuestro main en donde se ubicara el menu a partir del cual mandaremos a llamar a los siguientes modulos. Posteriormente cramos el modulo de "agregar producto" el cual tiene la funcion de recibir informacion por parte de el usuario y posteriormente 
+En el caso de nuestro codigo comenzamos por la elaboracion de nuestro main en donde se ubicara el menu a partir del cual mandaremos a llamar a los siguientes modulos. Posteriormente creamos el modulo de "agregar producto" el cual tiene la funcion de recibir informacion por parte de el usuario y posteriormente almacenarla dentro de un arreglo de diccionarios en la misma funcion.
+
+La funcion "buscar producto" se encarga de evaluar los datos que existen dentro del arreglo de diccionarios en la funcion "agregar producto" 
