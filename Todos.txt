@@ -1,0 +1,23 @@
+Película: Pacific rim Actor: Charlie Hunnam Director: Guillermo del toro Año: 2013		
+Película: Letras explicitas Actor : Dr. Dre Director: F. Gary Gray Año: 2015		
+Película: Terminator 2 Actor: Arnold Schwarzenegger Director: James Cameron Año: 1991		
+Película: Transformers 3 Actor: Shia Labeouf Director: Machael Bay Año: 2011		
+Película: Demon Slayer Actor: Tanjiro Director: Harou Sotozaki Año: 2020	
+
+Serie: Espiritu de lucha Actor: Ippo Director: Hitoshi Namba Temporadas: 1
+Serie: Breaking Bad Actor: Bryan Cranston Director: Vince Gilligan Temporadas: 5
+Serie: Lucifer Actor: Tom Ellis Director: Tom Kapinos Temporadas: 6
+Serie: Malcom Actor: Frankie Muniz Director: Linwood Boomer Temporadas 7
+
+Documental: Mantis Directora: Sylvia Roig Tema: Insector Años: 2023
+Documental: Lunas llenas con nombre propio Directora: Sylvia Roig Tema: Sistema solar Año: 2023
+Documental: Seres vivos que poblaban en la Península Directora: Sylvia Roig Tema: Seres vivos Año: 2023
+Documental: Conejos Directora: Sylvia Roig Tema: Animales Año: 2023
+Documental: Virus Directora: Sylvia Roig Tema: Bacterias Año: 2023
+
+Evento Deportivo: Campeonato Mundia de Rally Deporte: Rally Fecha: 4 de junio Hora: 11:00 Lugar: Italia
+Evento Deportivo: Campeonato FIBA Deporte: Baloncesto Fecha 8 de junio Hora: 11:30 Lugar: México
+Evento Deportivo: Lenzerheide Deporte: Ciclismo de Montaña Fecha: 11 de junio Hora: 12:00 Lugar: Suiza
+Evento Deportivo: Juegos Europeos Deporte: Karate Fecha: 25 de junio Hora: 13:00 Lugar: Cracovia
+Evento Deportivo: Juegos Europeos Deporte: Natación Fecha: 25 de junio Hora: 13:30 Lugar: Cracovia
+				
