@@ -55,3 +55,8 @@ Medir el tiempo de ejecución de un bloque de código.
 En resumen, la librería time es útil cuando necesitas realizar operaciones relacionadas con el tiempo, como medir la duración de una tarea, programar eventos o realizar operaciones de sincronización.
 
 #Archivos txt: Para el correcto funcionamiento de este script es necesario cargar los archivos txt dentro de nuestra carpeta de python con el fin de utilizar correctamente las funciones dentro de este como lo serian "cargar catalogo" 
+
+#Inicializacion: El script iciiara solicitando al usuario que seleccione alguna de las opciones disponibles dentro dl menu principal utilizando valores numericos para la seleccion, de agregar otro valor entonces devolvera un valor falso; si se dirige a la opcion cargar catalogo puede subir un archivo de texto colocando el nobre del archivo seguido de .txt. Con los otros modulos puede modificar el catalogo existente o crear uno diferente.
+
+# Comentarios 
+
