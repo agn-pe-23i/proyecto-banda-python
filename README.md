@@ -59,4 +59,6 @@ En resumen, la librería time es útil cuando necesitas realizar operaciones rel
 #Inicializacion: El script iciiara solicitando al usuario que seleccione alguna de las opciones disponibles dentro dl menu principal utilizando valores numericos para la seleccion, de agregar otro valor entonces devolvera un valor falso; si se dirige a la opcion cargar catalogo puede subir un archivo de texto colocando el nobre del archivo seguido de .txt. Con los otros modulos puede modificar el catalogo existente o crear uno diferente.
 
 # Comentarios 
+Para comenzar con la implementacion en python, diseñamos en primer lugar el menu desde el cual el usuario podra seleccionarr las opciones a las cuales desea acceder; utilizamos prints para mostrar las opciones en el panel de control y asignandoles un valor numerico y a su vez implementamos un while con el cual evaluara que el valor proporcionado por el usuario sea de tipo numerioc y se encuentre dentro del rango.
 
+"def agregar_producto" si el usuario selecciona la opcion numero 2 desde el menu principal es dirigido a la funcion de agregar producto, se le solicitara al usuario seleccionar el tipo de producto que desea agregar.
