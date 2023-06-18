@@ -56,7 +56,7 @@ En resumen, la librería time es útil cuando necesitas realizar operaciones rel
 
 #Archivos txt: Para el correcto funcionamiento de este script es necesario cargar los archivos txt dentro de nuestra carpeta de python con el fin de utilizar correctamente las funciones dentro de este como lo serian "cargar catalogo" 
 
-#Inicializacion: El script iciiara solicitando al usuario que seleccione alguna de las opciones disponibles dentro dl menu principal utilizando valores numericos para la seleccion, de agregar otro valor entonces devolvera un valor falso; si se dirige a la opcion cargar catalogo puede subir un archivo de texto colocando el nobre del archivo seguido de .txt. Con los otros modulos puede modificar el catalogo existente o crear uno diferente.
+#Inicializacion: El script iniciara solicitando al usuario que seleccione alguna de las opciones disponibles dentro dl menu principal utilizando valores numericos para la seleccion, de agregar otro valor entonces devolvera un valor falso; si se dirige a la opcion cargar catalogo puede subir un archivo de texto colocando el nobre del archivo seguido de .txt. Con los otros modulos puede modificar el catalogo existente o crear uno diferente.
 
 # Comentarios 
 Para comenzar con la implementacion en python, diseñamos en primer lugar el menu desde el cual el usuario podra seleccionar las opciones a las cuales desea acceder; utilizamos prints para mostrar las opciones en el panel de control y asignandoles un valor numerico y a su vez implementamos un while con el cual evaluara que el valor proporcionado por el usuario sea de tipo numerioc y se encuentre dentro del rango.
