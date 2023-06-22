@@ -133,7 +133,7 @@ En resumen, la librería time es útil cuando necesitas realizar operaciones rel
 
 #Inicializacion: El script iniciara solicitando al usuario que seleccione alguna de las opciones disponibles dentro del menu principal utilizando valores numericos para la seleccion, de agregar otro valor entonces devolvera un valor falso;es posible agregar, eliminar o buscar un producto dentro del catalogo cargado anteriormente. Con los otros modulos puede modificar el catalogo existente o crear uno diferente.
 
-# Comentarios sobre la implementacion 
+# Comentarios sobre la implementacion y uso de modulos
 Para comenzar nos basamos en nuestro diagrama top down para comenzar a implementar el main para llevar un control de lo que se necesitaba para la elaboracion de el script.
 
 -Despues implementamos un menu que nos va a mostrar todas las funciones disponibless del programa y nos va a devolver un numero; esto para no complicar la comparacion para el indice de menu.
