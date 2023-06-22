@@ -14,21 +14,23 @@ Matricula: 2223028637
 Programación estructurada CB01C
 
 # Diagrama de estructura 
-![Diagrama](https://github.com/agn-pe-23i/proyecto-banda-python/blob/main/Diagrama%20de%20estructura%20.png)
-
+![Diagrama](https://github.com/agn-pe-23i/proyecto-banda-python/blob/main/Diagrama_estructura.png)
+#Descripcion diagrama 
 Para la elaboracion de este script, planteamos un diseño basandonos en el modelo top-down que consiste en establecer una serie de niveles de mayor a menor complejidad (arriba-abajo) que den solución al algoritmo.
 
-En el caso de nuestro codigo comenzamos por la elaboracion de nuestro main en donde se ubicara el menu a partir del cual accederemos a los siguientes modulos. Posteriormente creamos el modulo de "agregar producto" el cual tiene la funcion de recibir informacion por parte de el usuario y posteriormente almacenarla dentro de un arreglo de diccionarios en la misma funcion.
+En el caso de nuestro codigo comenzamos por la elaboracion de nuestro main en donde se ubicara el menu a partir del cual accederemos a los siguientes modulos. 
 
-La funcion "buscar producto" se encarga de evaluar los datos que existen dentro del arreglo de diccionarios y de existir devuelve el valor buscado agregandolo a un arreglo llamado resultados, de no ser asi devuelve un valor falso.
+-"Agregar producto" recibe como informacion un arreglo de diccionarios y devuelve un nuevo arreglo con los datos proporcionados.
 
-Para la funcion  "eliminar producto", evaluara los datos almacenados dentro del diccionario de productos, solicitara al usuario ingresar el producto que desea eliminar y de existir dentro del registro procedera a eliminarlo, de no ser asi devuelve el valor falso. 
+-La funcion "buscar producto" se encarga de evaluar los datos que existen dentro del arreglo de diccionarios y de existir se devuelve los productos encontrados en base al titulo. Recibe un arreglo de diccionarios y devuelve los productos obtenidos de la busqueda. 
 
-"Mostrar catalogo" es una funcion que muestra en el panel de control al usuario el catalogo disponible, puede ser de peliculas, series, documentales o eventos deportivos dependiendo de lo que solicite el usuario, tambien puede mostrar todo el catalogo.
+-Para la funcion  "eliminar producto", evaluara los datos almacenados dentro del diccionario de productos. Recibe como entrada un arreglo de diccionarios y devuelve un arreglo de diccionarios sin los datos eliminados. 
 
-"Cargar catalogo" permite leer un archivo txt y cargarlo dentro de nuestro diccionario de resultados mostrando los elementos del archivo dentro del catalogo ya sea de series, peliculas, documentales o eventos deportivos.
+-"Mostrar catalogo" es una funcion que muestra en el panel de control al usuario el catalogo disponible, puede ser de peliculas, series, documentales o eventos deportivos dependiendo de lo que solicite el usuario, tambien puede mostrar todo el catalogo. Recibe como entrada un arreglo de diccionarrios y devuelve otro a la salida en base a las palabras clave. 
 
-En cuanto a la funcion "Guardar catalogo", esta permite guardar nuestro catalogo actual en un nuevo archivo txt que puede contener todos los productos que agregamos o eliminamos.
+-"Cargar catalogo" permite leer un archivo txt y cargarlo dentro de nuestro diccionario de resultados mostrando los elementos del archivo dentro del catalogo ya sea de series, peliculas, documentales o eventos deportivos. Devuelve como salida un arreglo de diccionarios. 
+
+-En cuanto a la funcion "Guardar catalogo", esta permite guardar nuestro catalogo actual en un nuevo archivo txt que puede contener todos los productos que agregamos o eliminamos. Recibe como entrada un arreglo de diccionarios. 
 
 # Documentación 
 
