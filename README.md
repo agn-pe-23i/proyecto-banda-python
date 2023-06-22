@@ -14,26 +14,28 @@ Matricula: 2223028637
 Programación estructurada CB01C
 
 # Diagrama de estructura 
-![Diagrama](https://github.com/agn-pe-23i/proyecto-banda-python/blob/main/Diagrama_estructura.png)
+![Diagrama](https://github.com/agn-pe-23i/proyecto-banda-python/blob/main/Blank%20diagram.png)
 
 # Descripcion diagrama 
 Para la elaboracion de este script, planteamos un diseño basandonos en el modelo top-down que consiste en establecer una serie de niveles de mayor a menor complejidad (arriba-abajo) que den solución al algoritmo.
 
-En el caso de nuestro codigo comenzamos por la elaboracion de nuestro main en donde se ubicara el menu a partir del cual accederemos a los siguientes modulos. 
+En el caso de nuestro codigo comenzamos por la elaboracion de nuestro main el cual se basa en primero mostrar un menu a partir del cual se tomara una decision para saber a cual modulo acceder.
 
--"Agregar producto" recibe como informacion un arreglo de diccionarios y devuelve un nuevo arreglo con los datos proporcionados.
+Diseñamos un menu para mostrar los siguientes modulos:
 
--La funcion "buscar producto" se encarga de evaluar los datos que existen dentro del arreglo de diccionarios y de existir se devuelve los productos encontrados en base al titulo. Recibe un arreglo de diccionarios y devuelve los productos obtenidos de la busqueda. 
+-"Agregar producto" recibe como informacion un arreglo de arreglos de diccionarios,en el modulo se pide informacion acerca del producto y se grega a un diccionario y devuelve un nuevo arreglo con los datos proporcionados.
 
--Para la funcion  "eliminar producto", evaluara los datos almacenados dentro del diccionario de productos. Recibe como entrada un arreglo de diccionarios y devuelve un arreglo de diccionarios sin los datos eliminados. 
+-"buscar producto" se encarga de evaluar los datos que existen dentro del arreglo de arreglos de diccionarios y de encontrar coincidencias se devuelve un arreglo de diccionarios con los productos encontrados en base a palabras clave. 
 
--"Mostrar catalogo" es una funcion que muestra en el panel de control al usuario el catalogo disponible, puede ser de peliculas, series, documentales o eventos deportivos dependiendo de lo que solicite el usuario, tambien puede mostrar todo el catalogo. Recibe como entrada un arreglo de diccionarrios y devuelve otro a la salida en base a las palabras clave. 
+-"eliminar producto", evaluara los datos almacenados dentro del arreglo de arreglos de diccionarios. Recibe como entrada un arreglo de arreglos de diccionarios y devuelve un arreglo de arreglos de diccionarios y busca coincidencias por el titulo o palabras clave de haberlas elimina ese diccionario y devuelve el arreglo de arreglo de diccionarios sin los datos eliminados.
 
--"Cargar catalogo" permite leer un archivo txt y cargarlo dentro de nuestro diccionario de resultados mostrando los elementos del archivo dentro del catalogo ya sea de series, peliculas, documentales o eventos deportivos. Devuelve como salida un arreglo de diccionarios. 
+-"Mostrar catalogo" es una funcion que muestra en la pantalla el catalogo disponible, puede ser de peliculas, series, documentales o eventos deportivos dependiendo de lo que solicite el usuario. Recibe como entrada un arreglo de arreglos de diccionarrios y muestra una cierta posicion del arreglo segun la seleccion.
 
--En cuanto a la funcion "Guardar catalogo", esta permite guardar nuestro catalogo actual en un nuevo archivo txt que puede contener todos los productos que agregamos o eliminamos. Recibe como entrada un arreglo de diccionarios.
+-"Cargar catalogo" permite leer un archivo .txt y cargarlo dentro de nuestro arreglo de arreglos de diccionarios, a una cierta posicion del arreglo segun la seleccion.
 
--La funciom salir recibe un numero entero como condicion para terminar el programa.
+-"Guardar catalogo", esta permite guardar un catalogo en especial (peliculas, series, etc) en un nuevo archivo .txt que contiene todos los productos que agregamos. Recibe como entrada un arreglo de arreglo de diccionarios y guarda segun una cierta posicion del arreglo segun la seleccion.
+
+-"salir" este modulo verifica si quieres terminar el programa. Lo hace mediante una letra si es "n" termina el programa.
 
 # Funciones
 menu(): Esta función muestra el menú principal y solicita al usuario que seleccione una opción. Devuelve el número de opción seleccionada.
@@ -56,9 +58,9 @@ Solicita al usuario una respuesta ("S" para confirmar o cualquier otra letra par
 Si la lista respuestas no está vacía y el usuario confirma la eliminación, se procede a eliminar el producto de la lista correspondiente.
 Utiliza ciclos for anidados para recorrer las listas de productos y verifica si los diccionarios coinciden con los productos encontrados en respuestas. Si se encuentra una coincidencia, se utiliza el método remove para eliminar el producto completo de la lista y se muestra en pantalla un mensaje indicando que el producto ha sido eliminado del catálogo.
 Si el usuario no confirma la eliminación o la lista respuestas está vacía, se devuelve o muestra un mensaje indicando que el producto no se encontró en el catálogo.
-La función mostrar simplemente muestra en pantalla los títulos y contenidos de los productos contenidos en el argumento variante, que generalmente sería la lista de productos encontrados.
+La función "mostrar" simplemente muestra en pantalla los títulos y contenidos de los productos contenidos en el argumento variante, que generalmente sería la lista de productos encontrados.
 
-mostrar (variante):Se encarga de buscar productos en varias listas de diccionarios (pelicula, serie, documental, evento) utilizando una palabra clave.
+"mostrar (variante)":Se encarga de buscar productos en varias listas de diccionarios (pelicula, serie, documental, evento) utilizando una palabra clave.
 
 regresar ciclo(): solicita al usuario si desea ingresar otro producto y devuelve True si la respuesta es "s" o False en caso contrario.
 
@@ -132,7 +134,25 @@ En resumen, la librería time es útil cuando necesitas realizar operaciones rel
 #Inicializacion: El script iniciara solicitando al usuario que seleccione alguna de las opciones disponibles dentro del menu principal utilizando valores numericos para la seleccion, de agregar otro valor entonces devolvera un valor falso;es posible agregar, eliminar o buscar un producto dentro del catalogo cargado anteriormente. Con los otros modulos puede modificar el catalogo existente o crear uno diferente.
 
 # Comentarios sobre la implementacion 
-Para comenzar con la implementacion en python, diseñamos en primer lugar el menu desde el cual el usuario podra seleccionar las opciones a las cuales desea acceder; utilizamos prints para mostrar las opciones en el panel de control y asignandoles un valor numerico y a su vez implementamos un while con el cual evaluara que el valor proporcionado por el usuario sea de tipo numerioc y se encuentre dentro del rango.
+Para comenzar nos basamos en nuestro diagrama top down para comenzar a implementar el main para llevar un control de lo que se necesitaba para la elaboracion de el script.
+
+-Despues implementamos un menu que nos va a mostrar todas las funciones disponibless del programa y nos va a devolver un numero; esto para no complicar la comparacion para el indice de menu.
+
+-Posteriormente comenzamos con las funciones, teniendo en primer lugar "Agregar producto" para el cual vemos que primero se requiere recuperar la informacion del producto pero al ser tan diferente entre si ocupamos uno para peliculas, otro para series, decumentales, etc. Con lo anterior creamos otro submodulo para la recuperacion de datos y la creacion del diccionario del producto, despues se agrega al arreglo de arreglos y con eso termina la funcion. 
+
+-Para la funcion buscar producto, tenemos que comparar palabras clave con el titulo o el contenido de los diccionarios, para ello buscamos elemento a elemento gracias al ciclo for; esta funcion tambien la utilizaremos en la funcion eliminar producto por ello las palabras clave se piden fuera de la funcion para que se pueda ocupar y regresa los resultados que son importantes para la funcion eliminar producto y no tanto para la funcion en si. 
+
+-Eliminar producto esta practicamente resuelto gracias a buscar producto, solo se eliminan los resultados encontrados gracias a la funcion buscar producto. 
+
+-Para mostrar el catalogo, ocupamos el mismo proceso que en la funcion buscar por que vamos elemento por elemento y los mostramos al usuario, la unica diferencia es que se muestra un arreglo de diccionarios segun la seleccion. 
+
+-Para la funcion cargar catalogo primero necesitamos saber la estructura que tendra el archivo para asi tomar los datos e ingresarlos a un diccionario, nuestra mejor solucion es que sea por lineas teniendo las 2 primeras palabras para el titulo del producto y el resto de la linea para la informacion del producto. Lo implementamos gracias a la funcion lineas de texto y solo tenemos que leer el archivo.
+
+-En cuanto a guardar catalogo es mas complejo pues necesitamos que el archivo de texto tenga la misma estructura que los archivos que vamos a cargar, asi que nuestra mejos solucion es que cada linea del texto sea un producto, esto lo generamos gracias a la funcion lineas de los archivos de texto.
+
+-El modulo mas sencillo es salir pues solamente colocamos un while al principio del main y salir solo manda la condicion de ruptura. 
+
+
 
 
 
