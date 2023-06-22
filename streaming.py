@@ -22,7 +22,7 @@ def mostrar(variante):
 def opciones():
     print('Seleccione la opción deseada'.center(100, ' '))
     print('='.center(100, '='))
-    print('1.- Pelicula.')
+    print('1.- Película.')
     print('2.- Serie.')
     print('3.- Documental.')            #Se muestran las opciones.
     print('4.- Evento deportivo.')
@@ -32,7 +32,7 @@ def opciones():
         respuesta = int(respuesta)   #De serlo lo hacemos entero.
         b = True   #Y mandamos un verdadero para continuar en el código.
     else:
-        print('No es valido.')    #De lo contrario indicamos que no es válido.
+        print('No es valido.')  #De lo contrario indicamos que no es válido.
         b = False   #Y mandamos un falso para volver a hacer la operación.
     return respuesta, b   #Retornamos la respuesta del número y "b" si es verdadero o falso.
 
